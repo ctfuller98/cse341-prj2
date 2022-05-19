@@ -1,0 +1,23 @@
+{
+    "contact": {
+      "firstName": "Jim",
+      "lastName": "Halpert",
+      "email": "jimmyh@gmail.com",
+      "favoriteColor": "Green",
+      "birthday": "01/03/91"
+    },
+    "contact2": {
+      "firstName": "Dwight",
+      "lastName": "Schrute",
+      "email": "beets4lyfe@test.com",
+      "favoriteColor": "Purple",
+      "birthday": "04/05/89"
+    },
+    "contact3": {
+      "firstName": "Michael",
+      "lastName": "Scott",
+      "email": "worldbestboss@dundmiff.com",
+      "favoriteColor": "Yellow",
+      "birthday": "11/30/95"
+    }
+  }

@@ -1,0 +1,55 @@
+#LOCAL HOST =======================================
+#RETRIEVE ALL CONTACTS IN COLLECTION
+GET http://localhost:3000/contacts
+###
+#RETRIEVE ONE CONTACT FROM COLLECTION
+GET http://localhost:3000/contacts/626c08017c9dc1872d304ca2
+###
+#CREATE NEW CONTACT 
+POST http://localhost:3000/contacts/ 
+Content-Type: application/json 
+
+{
+    "firstName":"Pam", "lastName":"Beasley", "email":"pammy@mail.com", "favoriteColor":"Green", "birthday":"06/20/1989"
+}
+###
+#DELETE ONE CONTACT
+DELETE http://localhost:3000/contacts/6272f953b48ad8a620959b6e HTTP/1.1
+###
+#UPDATE ONE CONTACT
+PUT http://localhost:3000/contacts/626c08017c9dc1872d304ca2
+Content-Type: application/json 
+
+{
+    "firstName": "John", "lastName": "Smith", "email": "max@c.com", "favoriteColor": "Yellow", "birthday": "1/20/1998" 
+}
+
+###
+
+
+#------------------------------HEROKU ENVIROMENT ---------------------------------------------------#
+#GET ALL CONTACTS
+GET https://cse341nodefuller.herokuapp.com/contacts
+###
+#GET ONE CONTACT 
+GET https://cse341nodefuller.herokuapp.com/contacts/626c08017c9dc1872d304ca2
+
+### Create contact 
+POST https://cse341nodefuller.herokuapp.com/contacts
+Content-Type: application/json 
+
+{
+    "firstName":"Pam", "lastName":"Beasley", "email":"pammy@mail.com", "favoriteColor":"Green", "birthday":"06/20/1989"
+}
+
+###DELETE contact 
+DELETE https://cse341nodefuller.herokuapp.com/contacts/6273028be10fb67b0e6055dc HTTP/1.1
+
+###
+#UPDATE ONE CONTACT
+PUT https://cse341nodefuller.herokuapp.com/contacts/626c08017c9dc1872d304ca2
+Content-Type: application/json 
+
+{
+    "firstName": "John", "lastName": "Smith", "email": "max@c.com", "favoriteColor": "Yellow", "birthday": "1/20/1998" 
+}
