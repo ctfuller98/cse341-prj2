@@ -14,14 +14,15 @@ Content-Type: application/json
 }
 ###
 #DELETE ONE CONTACT
-DELETE http://localhost:3000/contacts/6272f953b48ad8a620959b6e HTTP/1.1
+DELETE http://localhost:3000/b-lists/6287f8c60c89bc76d3e6f4d4 HTTP/1.1
+Content-Type: application/json
 ###
 #UPDATE ONE CONTACT
-PUT http://localhost:3000/contacts/626c08017c9dc1872d304ca2
+PUT http://localhost:3000/b-lists/6286d697c07fa34ff8431556
 Content-Type: application/json 
 
 {
-    "firstName": "John", "lastName": "Smith", "email": "max@c.com", "favoriteColor": "Yellow", "birthday": "1/20/1998" 
+    "name":"Sistine Chapel", "type":"travel", "price":"21000", "city":"Vatican City", "month":"May", "year":"2030", "country":"Vatican"
 }
 
 ###
@@ -32,24 +33,24 @@ Content-Type: application/json
 GET https://cse341-prj2.herokuapp.com/b-lists
 ###
 #GET ONE CONTACT 
-GET https://cse341-prj2.herokuapp.com/b-lists/626c08017c9dc1872d304ca2
+GET https://cse341-prj2.herokuapp.com/b-lists/6286c571862ae0680f18a76c
 
 ### Create contact 
-POST https://cse341nodefuller.herokuapp.com/contacts
+POST https://cse341-prj2.herokuapp.com/b-lists
 Content-Type: application/json 
 
 {
-    "firstName":"Pam", "lastName":"Beasley", "email":"pammy@mail.com", "favoriteColor":"Green", "birthday":"06/20/1989"
+    "name":"Sistine Chapel", "type":"history", "price":"1000", "city":"Vatican City", "month":"May", "year":"2030", "country":"Vatican"
 }
 
 ###DELETE contact 
-DELETE https://cse341nodefuller.herokuapp.com/contacts/6273028be10fb67b0e6055dc HTTP/1.1
+DELETE https://cse341-prj2.herokuapp.com/b-lists/6286d50c881bf9ce9b90727f HTTP/1.1
 
 ###
 #UPDATE ONE CONTACT
-PUT https://cse341nodefuller.herokuapp.com/contacts/626c08017c9dc1872d304ca2
+PUT https://cse341-prj2.herokuapp.com/b-lists/6286d50c881bf9ce9b90727f
 Content-Type: application/json 
 
 {
-    "firstName": "John", "lastName": "Smith", "email": "max@c.com", "favoriteColor": "Yellow", "birthday": "1/20/1998" 
+    "name":"Sistine Chapel", "type":"history", "price":"1000", "city":"Vatican City", "month":"May", "year":"2030", "country":"Vatican"
 }

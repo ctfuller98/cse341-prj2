@@ -2,10 +2,10 @@
   "swagger": "2.0",
   "info": {
     "title": "My API",
-    "description": "Temple API",
+    "description": "My API",
     "version": "1.0.0"
   },
-  "host": "cse341nodefuller.herokuapp.com",
+  "host": "cse341-prj2.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -18,7 +18,7 @@
         "responses": {}
       }
     },
-    "/contacts/": {
+    "/b-lists/": {
       "get": {
         "description": "",
         "produces": [
@@ -40,19 +40,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "name": {
                   "example": "any"
                 },
-                "lastName": {
+                "type": {
                   "example": "any"
                 },
-                "email": {
+                "price": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "city": {
                   "example": "any"
                 },
-                "birthday": {
+                "month": {
+                  "example": "any"
+                },
+                "year": {
+                  "example": "any"
+                },
+                "country": {
                   "example": "any"
                 }
               }
@@ -69,7 +75,7 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/b-lists/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -104,19 +110,25 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "name": {
                   "example": "any"
                 },
-                "lastName": {
+                "type": {
                   "example": "any"
                 },
-                "email": {
+                "price": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "city": {
                   "example": "any"
                 },
-                "birthday": {
+                "month": {
+                  "example": "any"
+                },
+                "year": {
+                  "example": "any"
+                },
+                "country": {
                   "example": "any"
                 }
               }
@@ -148,6 +160,17 @@
           },
           "500": {
             "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
