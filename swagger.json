@@ -11,14 +11,7 @@
     "https"
   ],
   "paths": {
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {}
-      }
-    },
-    "/b-lists/": {
+    "/": {
       "get": {
         "description": "",
         "produces": [
@@ -75,7 +68,7 @@
         }
       }
     },
-    "/b-lists/{id}": {
+    "/{id}": {
       "get": {
         "description": "",
         "produces": [
@@ -160,17 +153,6 @@
           },
           "500": {
             "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/": {
-      "get": {
-        "description": "",
-        "parameters": [],
-        "responses": {
-          "200": {
-            "description": "OK"
           }
         }
       }
