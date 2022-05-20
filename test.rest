@@ -1,16 +1,16 @@
 #LOCAL HOST =======================================
-#RETRIEVE ALL CONTACTS IN COLLECTION
-GET http://localhost:3000/contacts
+#RETRIEVE ALL ITEMS IN COLLECTION
+GET http://localhost:3000/b-lists
 ###
 #RETRIEVE ONE CONTACT FROM COLLECTION
-GET http://localhost:3000/contacts/626c08017c9dc1872d304ca2
+GET http://localhost:3000/b-lists/6286c571862ae0680f18a76c
 ###
 #CREATE NEW CONTACT 
-POST http://localhost:3000/contacts/ 
+POST http://localhost:3000/b-lists/ 
 Content-Type: application/json 
 
 {
-    "firstName":"Pam", "lastName":"Beasley", "email":"pammy@mail.com", "favoriteColor":"Green", "birthday":"06/20/1989"
+    "name":"Sistine Chapel", "type":"history", "price":"1000", "city":"Vatican City", "month":"May", "year":"2030", "country":"Vatican"
 }
 ###
 #DELETE ONE CONTACT
@@ -29,10 +29,10 @@ Content-Type: application/json
 
 #------------------------------HEROKU ENVIROMENT ---------------------------------------------------#
 #GET ALL CONTACTS
-GET https://cse341nodefuller.herokuapp.com/contacts
+GET https://cse341-prj2.herokuapp.com/b-lists
 ###
 #GET ONE CONTACT 
-GET https://cse341nodefuller.herokuapp.com/contacts/626c08017c9dc1872d304ca2
+GET https://cse341-prj2.herokuapp.com/b-lists/626c08017c9dc1872d304ca2
 
 ### Create contact 
 POST https://cse341nodefuller.herokuapp.com/contacts
