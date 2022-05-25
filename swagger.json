@@ -26,38 +26,7 @@
       },
       "post": {
         "description": "",
-        "parameters": [
-          {
-            "name": "body",
-            "in": "body",
-            "schema": {
-              "type": "object",
-              "properties": {
-                "name": {
-                  "example": "any"
-                },
-                "type": {
-                  "example": "any"
-                },
-                "price": {
-                  "example": "any"
-                },
-                "city": {
-                  "example": "any"
-                },
-                "month": {
-                  "example": "any"
-                },
-                "year": {
-                  "example": "any"
-                },
-                "country": {
-                  "example": "any"
-                }
-              }
-            }
-          }
-        ],
+        "parameters": [],
         "responses": {
           "201": {
             "description": "Created"
