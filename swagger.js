@@ -2,7 +2,7 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
   info: {
-    title: 'My API',
+    title: 'My Bucket List API',
     description: 'My API'
   },
   host: 'cse341-prj2.herokuapp.com',
@@ -10,7 +10,7 @@ const doc = {
 };
 
 const outputFile = './swagger.json';
-const endpointsFiles = ['./routes/index.js'];
+const endpointsFiles = ['./routes/b-lists.js'];
 
 // generate swagger.json
 swaggerAutogen(outputFile, endpointsFiles, doc);
