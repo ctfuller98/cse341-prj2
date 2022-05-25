@@ -10,7 +10,7 @@ POST http://localhost:3000/b-lists/
 Content-Type: application/json 
 
 {
-    "name":"Sistine Chapel", "type":"history", "price":"1000", "city":"Vatican City", "month":"May", "year":"2030", "country":"Vatican"
+    "name":"Sistine Chapel", "type":"history", "price": "1000", "city":"Vatican City", "month":"May", "year":"2030", "country":"Vatican"
 }
 ###
 #DELETE ONE CONTACT

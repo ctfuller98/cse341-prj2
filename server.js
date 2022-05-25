@@ -1,9 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser')
+const cors = require('cors');
 const app = express();
+const { signupValidation, loginValidation } = require('./validation.js');
 const port = process.env.PORT || 3000;
 const connect = require('./db/connect')
+
+
 connect.initDatabase();
+app.use(cors());
+
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -19,3 +25,6 @@ app
   })
   .use('/', require('./routes'));
 
+process.on('uncaughtException', (err, origin) => {
+  console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`);
+  });
